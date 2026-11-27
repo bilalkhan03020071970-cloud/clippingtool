@@ -3,6 +3,7 @@
 !.gitignore
 !LICENSE
 !README.md
+!Dockerfile
 !requirements.txt
 !run.ps1
 !run.sh
