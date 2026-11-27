@@ -31,6 +31,8 @@ COOKIE = 'nc_phone'
 
 
 def is_local(host):
+    if os.environ.get('NEONCLIPPING_ALLOW_PUBLIC') == '1' or os.environ.get('NEONCLIPPING_PUBLIC') == '1':
+        return True
     return host in LOCAL or str(host).startswith('127.')
 
 
